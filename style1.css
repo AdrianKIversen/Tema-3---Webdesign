@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+
+@import url("https://fonts.cdnfonts.com/css/vogue");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+ 
+
+header {
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-block: 5vh;
+    padding-inline: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex; 
+    flex-direction: row;
+    column-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+nav > ul > li {
+    color: rgb(0, 0, 0);
+    list-style: none;
+    font-family: 'Raleway';
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+nav > ul > li:hover {
+    color:rgb(155, 102, 61);
+}
+
+nav > ul > li > button {
+    padding: 8px 20px;
+    border-radius: 16px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.843);
+    transition: all 0.3s ease 0s;
+}
+
+nav > ul > li > button:hover {
+    background-color: rgb(155, 102, 61); 
+}
+
+
+
+nav > .hamburger_menu {
+    display: none;
+    cursor:pointer;
+}
+
+
+.intro {
+    text-align: center;
+    margin-top: 140px;
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Raleway';
+}
+
+footer > h1 {
+    font-family:'Vogue';
+    font-size: 20px;
+    margin-left: 120px;
+    padding-top: 50px;
+}
+
+footer > h1 {
+    cursor: pointer;
+}
+
+
+.cont {
+    display: flex;
+    gap: 130px;
+    padding: 100px 20px;
+    
+}
+
+.service {
+    
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0 100px; 
+}
+
+.service > ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.legal {
+    
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.legal > ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 14px;
+    cursor: pointer;
+} 
+
+
+.kontakt {
+    
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.kontakt > ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 14px;
+    
+}
+
+.kontakt > ul > li > img {
+    margin-top: 20px;
+}
+
+
+footer > p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.cont > p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .cont {
+        
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer > h1 {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav > img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display:none;
+    }
+    nav .hamburger_menu {
+        max-width: 40px;
+        display: flex;
+    }
+}
